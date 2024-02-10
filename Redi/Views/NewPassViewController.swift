@@ -24,9 +24,9 @@ class NewPassViewController: UIViewController {
         loginBtn.isEnabled = false
         loginBtn.backgroundColor = UIColor(hex: 0xA7A7A7)
         
-        pass1.addTarget(self, action: #selector(textChange(_:)), for: .editingChanged)
+        pass1.addTarget(self, action: #selector(checkText(_:)), for: .editingChanged)
         
-        pass2.addTarget(self, action: #selector(textChange(_:)), for: .editingChanged)
+        pass2.addTarget(self, action: #selector(checkText(_:)), for: .editingChanged)
         
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
